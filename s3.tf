@@ -1,4 +1,4 @@
 resource "aws_s3_bucket" "test" {
-	bucket = "cpweb-tf-first-bucket"
+	bucket = "${var.s3_bucket_name}"
 	acl = "private"
 }
